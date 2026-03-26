@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぽいんとらべる</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-effect"></div>
+    <div class="container">
+
+        <!-- Header Section -->
+        <header class="page-header">
+            <div class="header-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="chart-icon">
+                    <path d="M4 19L20 19" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 14L9 9L13 13L20 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="header-text">
+                <h1>ぽいんとらべる</h1>
+                <p>あなたのポイントをどこに交換できるか瞬時に診断</p>
+            </div>
+        </header>
+
+        <!-- Input Card -->
+        <div class="card input-card">
+            <div class="card-header">
+                <div class="icon-square">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="white" />
+                    </svg>
+                </div>
+                <h2>保有ポイント情報を入力</h2>
+            </div>
+
+            <div class="input-row">
+                <!-- Departure Input -->
+                <div class="input-group">
+                    <label>
+                        出発ポイント（現在お持ちのポイント）
+                        <span class="optional">※複数選択可</span>
+                    </label>
+                    <div id="departure-selects-container">
+                        <div class="select-wrapper departure-select">
+                            <select>
+                                <option value="">すべての出発元を表示</option>
+                            </select>
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M6 9L12 15L18 9" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arrival Input -->
+                <div class="input-group">
+                    <label>
+                        到着ポイント（交換したいポイント）
+                        <span class="optional">※任意</span>
+                    </label>
+                    <div class="select-wrapper arrival-select">
+                        <select>
+                            <option value="">すべての交換先を表示</option>
+                        </select>
+                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty State Card -->
+        <div class="card empty-state-card">
+            <div class="icon-circle-large">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21 21L16.65 16.65" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h3>ポイントを選択してください</h3>
+            <p>出発ポイントまたは到着ポイントのどちらかを選択すると、交換可能なルートと交換レートを確認できます。</p>
+        </div>
+
+        <!-- Results Card -->
+        <div class="card results-card" style="display: none;">
+            <div class="card-header">
+                <div class="icon-square" style="background: linear-gradient(135deg, var(--arrival-color), #3b82f6);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2>交換ルート一覧</h2>
+            </div>
+            <div class="results-container">
+                <!-- Results injected by JS -->
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
