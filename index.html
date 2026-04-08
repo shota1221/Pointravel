@@ -29,14 +29,18 @@
             <div class="header-text">
                 <h1>ぽいんとらべる</h1>
                 <p>あなたのポイントをどこに交換できるか瞬時に診断</p>
+                <p style="margin-top: 12px; font-size: 14px; color: var(--text-secondary); line-height: 1.6;">旅行や飛行機が好きな方へ！お手持ちの各種ポイントを、JALマイルやANAマイルなどに効率よく交換するための最適なルートをご案内するサイトです。</p>
             </div>
         </header>
 
         <!-- How to Use Card -->
-        <div class="card how-to-use-card" style="margin-bottom: 24px; padding: 24px; background-color: var(--primary-light); box-shadow: none; border-radius: 16px;">
+        <div class="card how-to-use-card"
+            style="margin-bottom: 24px; padding: 24px; background-color: var(--primary-light); box-shadow: none; border-radius: 16px;">
             <div class="card-header" style="margin-bottom: 12px; border: none; padding: 0;">
-                <h2 style="font-size: 16px; color: var(--primary-color-dark); display: flex; align-items: center; gap: 8px;">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <h2
+                    style="font-size: 16px; color: var(--primary-color-dark); display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 16v-4"></path>
                         <path d="M12 8h.01"></path>
@@ -130,6 +134,78 @@
             </div>
         </div>
 
+        <!-- Explanation Section -->
+        <div class="card content-card" style="line-height: 1.8;">
+            <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 16px; color: var(--text-primary);">マイル交換の基礎知識</h2>
+            <p style="color: var(--text-secondary); font-size: 15px;">なぜ日常のポイントをマイルに交換するのでしょうか？一般的なポイント（VポイントやPontaポイントなど）は「1ポイント＝1円」として使われることが多いですが、JALマイルやANAマイルに交換して特典航空券を発券すると、<strong>1マイルの価値が2円〜10円以上になる</strong>ことも珍しくありません。<br><br>
+            例えば、ハワイ往復のビジネスクラス航空券は通常数十万円しますが、マイルを使えば数万マイルで発券可能です。このように、ポイントをそのまま使うよりも、マイルに集約することで圧倒的にお得に旅行を楽しむことができます。「ぽいんとらべる」では、あなたが持っている様々なポイントを効率よくマイル化できる最適なルートを瞬時に計算します。</p>
+        </div>
+
+        <!-- Comparison Section -->
+        <div class="card content-card" style="line-height: 1.8;">
+            <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 16px; color: var(--text-primary);">おすすめの交換ルートと比較</h2>
+            <p style="color: var(--text-secondary); font-size: 15px;">ポイントをマイルに交換するには、複数のポイントサイトを経由する「交換ルート」を活用するのが基本です。ここでは代表的なルートの特徴を比較します。</p>
+            <div class="table-responsive" style="overflow-x: auto; margin-top: 16px;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; min-width: 600px;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid #e5e7eb;">
+                            <th style="padding: 12px; color: var(--text-secondary);">ルート名</th>
+                            <th style="padding: 12px; color: var(--text-secondary);">対象マイル</th>
+                            <th style="padding: 12px; color: var(--text-secondary);">交換レート</th>
+                            <th style="padding: 12px; color: var(--text-secondary);">特徴・必要なカード</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="padding: 12px; font-weight: bold; color: var(--primary-color-dark);">みずほルート</td>
+                            <td style="padding: 12px;">ANA</td>
+                            <td style="padding: 12px; font-weight: bold;">70%</td>
+                            <td style="padding: 12px;">みずほマイレージクラブカード/ANAが必要。現在のANAマイル交換の主流。</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="padding: 12px; font-weight: bold; color: var(--primary-color-dark);">ニモカルート</td>
+                            <td style="padding: 12px;">ANA</td>
+                            <td style="padding: 12px; font-weight: bold;">70%</td>
+                            <td style="padding: 12px;">ANA VISA nimocaカードが必要。九州・函館の交換機での手続きが必須。</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; font-weight: bold; color: var(--primary-color-dark);">モッピールート等</td>
+                            <td style="padding: 12px;">JAL</td>
+                            <td style="padding: 12px; font-weight: bold;">実質80%</td>
+                            <td style="padding: 12px;">キャンペーンを利用することで高レートを実現（時期により変動）。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="card content-card" style="line-height: 1.8;">
+            <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 24px; color: var(--text-primary);">よくある質問 (FAQ)</h2>
+            <div style="margin-top: 16px;">
+                <h4 style="margin-bottom: 8px; color: var(--text-primary); font-size: 16px; display: flex; align-items: flex-start; gap: 8px;">
+                    <span style="color: var(--primary-color); font-size: 18px;">Q.</span> ポイント交換にはどれくらい日数がかかりますか？
+                </h4>
+                <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; margin-left: 24px;">
+                    <span style="font-weight: bold; color: var(--text-secondary); margin-left: -24px; margin-right: 8px;">A.</span>交換元のプログラムや経由するルートによって異なります。早いものでは数日、複数のサイトを経由する場合は全体で1ヶ月〜2ヶ月程度かかることもあります。計画的な交換をおすすめします。
+                </p>
+
+                <h4 style="margin-bottom: 8px; color: var(--text-primary); font-size: 16px; display: flex; align-items: flex-start; gap: 8px;">
+                    <span style="color: var(--primary-color); font-size: 18px;">Q.</span> 途中でポイントが減る（交換レートが100%未満になる）のはなぜですか？
+                </h4>
+                <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; margin-left: 24px;">
+                    <span style="font-weight: bold; color: var(--text-secondary); margin-left: -24px; margin-right: 8px;">A.</span>異なる企業間でポイントを移行する際の手数料が含まれているためです。ただし、マイルの価値（1マイル＝2円以上）を考慮すると、レートが70%になっても実質的な価値（円換算）は上がっている場合がほとんどです。
+                </p>
+
+                <h4 style="margin-bottom: 8px; color: var(--text-primary); font-size: 16px; display: flex; align-items: flex-start; gap: 8px;">
+                    <span style="color: var(--primary-color); font-size: 18px;">Q.</span> マイルの有効期限はどうなりますか？
+                </h4>
+                <p style="font-size: 15px; color: var(--text-secondary); margin-left: 24px;">
+                    <span style="font-weight: bold; color: var(--text-secondary); margin-left: -24px; margin-right: 8px;">A.</span>マイル口座に加算された日から数えて、一般的にJAL・ANAともに36ヶ月（約3年）です。特典航空券の予約タイミングを見計らってからマイルに集約するのがコツです。
+                </p>
+            </div>
+        </div>
+
         <!-- Notes Section -->
         <div class="card notes-card"
             style="margin-bottom: 20px; background-color: transparent; box-shadow: none; border: 1px solid #e5e7eb; padding: 24px;">
@@ -153,6 +229,18 @@
         </div>
 
     </div>
+
+    <!-- Site Footer -->
+    <footer style="text-align: center; padding: 40px 20px; background-color: var(--bg-card); border-top: 1px solid #e5e7eb; margin-top: 40px;">
+        <div style="display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; flex-wrap: wrap;">
+            <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">ホーム</a>
+            <a href="profile.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">運営者情報</a>
+            <a href="privacy.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">プライバシーポリシー</a>
+            <a href="contact.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">お問い合わせ</a>
+        </div>
+        <p style="color: var(--text-tertiary); font-size: 12px;">&copy; 2026 ぽいんとらべる. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
