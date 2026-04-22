@@ -377,3 +377,36 @@ body {
     background: #f9fafb;
     border-radius: 12px;
 }
+
+/* Affiliate Ad Placeholder */
+.ad-placeholder {
+    width: 100%;
+    background-color: #f3f4f6;
+    border: 2px dashed #d1d5db;
+    border-radius: 16px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: var(--text-tertiary);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.ad-placeholder:hover {
+    background-color: #f9fafb;
+    border-color: var(--primary-color);
+    color: var(--primary-color-dark);
+}
+
+.ad-placeholder p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.ad-placeholder span {
+    font-size: 12px;
+}
